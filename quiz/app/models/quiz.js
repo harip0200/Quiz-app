@@ -1,7 +1,4 @@
 import DS from 'ember-data';
-
-
-
 let quiz=DS.Model.extend({
      question:DS.attr('string'),
      optionA: DS.attr('string'),
@@ -9,7 +6,6 @@ let quiz=DS.Model.extend({
      isAnswered: DS.attr('boolen'),
      answer: DS.attr('string')
  });
-
 quiz.reopenClass({
   FIXTURES: [
       {
@@ -30,4 +26,4 @@ quiz.reopenClass({
       }
     ]
 });
-export default quiz
+export  default quiz

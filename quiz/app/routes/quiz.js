@@ -1,8 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model:function (que) {
+  model:function (quNo) {
       console.log(this.store.all("quiz").get("content"));
-    return que.id
+      return quNo.id
   }
 });
