@@ -1,11 +1,13 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-name=""
+name:"",
 actions:{
-  login(){
-    if(name)
-    document.cookie = "name=" + this.get(name)
+   login(){
+    if(this.get("name")!=""){
+      document.cookie = "name=" + this.get("name")
+      this.transitionTo("quiz", 1)
+    }
     }
 }
 });

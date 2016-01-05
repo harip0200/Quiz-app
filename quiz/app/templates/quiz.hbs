@@ -6,8 +6,16 @@
   {{model.question}}
   <br>
   <input type="button" {{action  "update" model model.optionA}}   value='{{model.optionA}}'>
-  <br>
   <input type="button"  {{action  "update" model model.optionB}}   value='{{model.optionB}}'>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <input type="button"  {{action  "skip" model}}   value='skip'>
+  <input type="button"  {{action  "quit"}}   value='quit'>
+
+  <br>
 {{else}}
   score:{{score}}
   <input type="button" {{action "playAgain"}} value="play again">

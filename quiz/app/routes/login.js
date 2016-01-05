@@ -7,4 +7,5 @@ export default Ember.Route.extend({
     if (parts.length == 2){
       this.transitionTo("quiz",1)
     }
-});
+  }
+})
