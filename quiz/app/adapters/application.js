@@ -1,4 +1,3 @@
 export {
 	default
-}
-from 'ember-data-fixture-adapter';
+}from 'ember-data-fixture-adapter';

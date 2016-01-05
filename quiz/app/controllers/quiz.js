@@ -1,5 +1,5 @@
 import Ember from 'ember';
-
+import Quiz from "../models/quiz"
 export default Ember.Controller.extend({
   score:"0",
   actions:{
@@ -14,7 +14,10 @@ export default Ember.Controller.extend({
         this.transitionToRoute("quiz",parseInt(i)+1)
         },
       quit() {
-        this.transitionToRoute("quiz",16)
+        this.transitionToRoute("quiz",11)
+      },
+      playAgain(){
+
       }
     }
 });
