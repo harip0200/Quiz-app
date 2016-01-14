@@ -19,26 +19,5 @@ export default Ember.Route.extend({
         this.transitionTo("login");
       }
     }
-
-
-  },
-  setupController:function(controller,model) {
-    this._super(controller,model);
-    var i = parseInt(controller.get("time"));
-    var t=setInterval(function () {
-      if(i!=11){
-      controller.set("time",i++);
-      }
-      else{
-        controller.set("time",0);
-        for(var j=0;j<Quiz.FIXTURES.length;j++){
-          if(Quiz.FIXTURES[j].isAnswered==false){
-              controller.transitionToRoute("quiz",j+1)
-              break;
-        }
-        }
-        clearInterval(t);
-      }
-    },1000)
   }
 });
