@@ -1,0 +1,42 @@
+head ,body{
+  background-color: grey;
+}
+.head{
+  border: 1px solid black;
+  width: 100%;
+  background-color: black;
+}
+.head p{
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+
+}
+.body{
+  margin-left: 725px;
+    margin-top: 115px;
+    display: inline-block;
+    color:white;
+}
+.body input{
+  width: 204px;
+background-color: #3E3E3E;
+margin-left: 73px;
+margin-top: 21px;
+color: white;
+}
+.footer {
+  position: absolute;
+  top: 94%;
+  width: 99%;
+  height: 3%;
+}
+.time{
+  margin-top: 10px;
+  font-size: 75px;
+  text-align: center;
+}
+.footer {
+
+}

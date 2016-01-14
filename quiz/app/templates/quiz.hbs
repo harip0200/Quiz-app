@@ -1,19 +1,22 @@
-
-{{log model}}
 {{#if model.question}}
-  Question number {{model.id}}/10
-  <br>
+  <div class="head">
+    <p>  Question number {{model.id}}/10</p>
+  </div>
+  <p class="time">
+    {{time}}
+  </p>
+  <div class="body">
   {{model.question}}
   <br>
   <input type="button" {{action  "update" model model.optionA}}   value='{{model.optionA}}'>
+  <br>
   <input type="button"  {{action  "update" model model.optionB}}   value='{{model.optionB}}'>
   <br>
-  <br>
-  <br>
-  <br>
-
-  <input type="button"  {{action  "skip" model}}   value='skip'>
-  <input type="button"  {{action  "quit"}}   value='quit'>
+  </div>
+  <div class="footer">
+    <input type="button"  {{action  "skip" model}}   value='skip'>
+    <input type="button"  {{action  "quit"}}   value='quit'>
+  </div>
 
   <br>
 {{else}}
